@@ -2,10 +2,10 @@
       <div class="row">
         <div class="col-lg-8 offset-2">
           <p>This program will say hello to you.</p>
-          <form action="hello.php" method="get">
+          <form action="isPrime.php" method="get">
             <div class="form-group">
-              <label for="height">Name</label>
-              <input type="text" min="1" id="name" name="name" class="form-control" placeholder="Enter your name" />
+              <label for="number">Number to test for primality</label>
+              <input type="number" min="1" id="number" name="number" class="form-control" placeholder="Enter a number" />
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-primary">Submit</button>
