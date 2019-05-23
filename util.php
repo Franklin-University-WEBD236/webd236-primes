@@ -1,5 +1,5 @@
 <?php
-  function safeParam($key, $default) {
+function safeParam($key, $default) {
   $val = "";
   if (isset($_POST[$key])) {
     $val = htmlentities(trim($_POST[$key]));
