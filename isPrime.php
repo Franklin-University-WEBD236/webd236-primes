@@ -2,10 +2,12 @@
 include_once('util.php');
 
 function isPrime($num) {
-  if ($num == 2 || num == 3) {
+  if ($num == 2 || $num == 3) {
     return true;
+  } else if ($num % 2 == 0) {
+    return false;
   }
-  for ($i = 3; $i < $num; $i + 2) {
+  for ($i = 3; $i < $num; $i = $i + 2) {
     if ($num % $i == 0) {
       return false;
     }
@@ -30,6 +32,13 @@ $number = safeParam('number', 17);
   }
 ?>
   prime</p>
+<?php
+  for ($j = 2; $j < $number; ++$j) {
+    if (isPrime($j)) {
+      echo "$j<br>";
+    }
+  }
+?>
           <p><a href="/">Return to BMI Calculator</a></p>
         </div>
       </div>
